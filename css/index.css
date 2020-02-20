@@ -138,18 +138,29 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
 /* Your code starts here! */
+@font-face {
+  font-family: 'Lacquer';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lacquer Regular'), local('Lacquer-Regular'), url(https://fonts.gstatic.com/s/lacquer/v1/EYqzma1QwqpG4_BBN7iKWg.ttf) format('truetype');
+}
+html {
+  font-family: 'Lacquer', sans-serif;
+  font-size: 62.5%;
+  font-size: 1.5rem;
+}
 * {
   /* border: 2px solid blue; */
   padding: 0;
   max-width: 100%;
 }
 body {
-  margin: 2% 15%;
+  margin: 3% 15%;
   background-color: white;
 }
 section {
@@ -165,7 +176,7 @@ header nav {
   justify-content: space-between;
 }
 header nav .links {
-  width: 25%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
   margin: 0 0 0 75%;
@@ -176,11 +187,12 @@ header nav .links {
   margin: 3%;
 }
 header a {
-  color: orange;
+  color: purple;
   text-decoration: none;
 }
 header a:hover {
   color: black;
+  font-size: 0.5rem;
 }
 .CTA button a {
   text-decoration: none;
@@ -235,27 +247,14 @@ header a:hover {
 /* .ctaImg{
     width:40%;
 } */
+.content {
+  background-color: blue;
+}
 .wrapper {
   display: flex;
   justify-content: space-around;
   margin: 2% 0;
 }
-/* No need for this code because it is inline-block and we did all this with one class .wrapper */
-/* .content{
-    display: inline-block;
-    position: relative;
-} */
-/* .contentCard1, .contentCard2{
-    width: 48%;
-    display: inline-block;
-    margin: 4% 7px;
-} */
-/* .contentCard3, .contentCard4, .contentCard5{
-    width: 32%;
-    display: inline-block;
-    margin: 4% 4px;
-} */
-/* Why is this not taking 100% of the width? */
 .middle-img {
   display: flex;
   justify-content: center;
@@ -276,9 +275,15 @@ header a:hover {
 }
 #contact a {
   text-decoration: none;
+  color: black;
 }
 address {
   margin-top: -16px;
+}
+#work {
+  width: 70%;
+  font-size: 1rem;
+  border: 1px solid black;
 }
 .copyright {
   margin-top: 3%;
@@ -291,7 +296,7 @@ footer {
 /* Phone */
 @media (max-width: 500px) {
   body {
-    /* background-color: blue; */
+    background-color: blue;
   }
   h1 {
     font-size: 4rem;
