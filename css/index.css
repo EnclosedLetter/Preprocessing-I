@@ -163,17 +163,17 @@ body {
   margin: 3% 15%;
   background-color: white;
 }
-section {
-  padding: 4% 0;
-}
-header nav {
+body header nav {
   /* width: 75%;
-    text-align: center;
-    align-items: center;
-    position: relative;
-    top: 30%; */
+		text-align: center;
+		align-items: center;
+		position: relative;
+		top: 30%; */
   display: flex;
   justify-content: space-between;
+}
+section {
+  padding: 4% 0;
 }
 header nav .links {
   width: 50%;
@@ -248,7 +248,7 @@ header a:hover {
     width:40%;
 } */
 .content {
-  background-color: blue;
+  background-color: lightblue;
 }
 .wrapper {
   display: flex;
