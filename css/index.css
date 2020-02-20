@@ -145,28 +145,16 @@ h5 {
 /* Your code starts here! */
 * {
   /* border: 2px solid blue; */
-  /* margin:0; */
   padding: 0;
   max-width: 100%;
 }
 body {
-  margin: 0% 15%;
+  margin: 2% 15%;
   background-color: white;
-  /* Why doesn't width work? */
-  /* width: 90% */
 }
 section {
   padding: 4% 0;
 }
-/* header{
-    position: fixed;
-    display: block;
-    width: 70%;
-    height: 8%;
-    background-color: white;
-    top: 0;
-    z-index: 1;
-} */
 header nav {
   /* width: 75%;
     text-align: center;
@@ -177,40 +165,34 @@ header nav {
   justify-content: space-between;
 }
 header nav .links {
-  /* This width will affect how much the links take up in the nav */
   width: 25%;
   display: flex;
   justify-content: space-between;
   margin: 0 0 0 75%;
-  /* Align items will center items through the x axis */
   align-items: center;
   text-decoration: none;
-  /* This isn't changing the color grey, why is that?
-    color: grey; */
 }
-hr {
-  border: 1px solid black;
+.CTASection .ctaImg {
+  margin: 3%;
 }
-/* Why does this change the color, but not .links? */
 header a {
-  /* width: 20%;
-    margin: 5% 4%; */
-  color: grey;
+  color: orange;
   text-decoration: none;
 }
 header a:hover {
   color: black;
 }
-/* This will cause the image not to move */
-/* header img{
-    position: absolute;
-    top: 10%;
-    left: 76%;
-} */
-/* This will change the header logo
-.logo{
-    width:10%;
-  } */
+.CTA button a {
+  text-decoration: none;
+  color: orange;
+}
+.ctaImg img {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0 25%;
+  width: 75%;
+  height: auto;
+}
 .CTASection {
   display: flex;
   /* padding: 4% 3%; */
@@ -225,28 +207,25 @@ header a:hover {
     left: 55%;
 } */
 .CTA {
+  margin: 3% 0;
   width: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Shouldn't this make the Title and the button flex into a column? */
   flex-flow: column;
-  border: 1px solid black;
   font-size: 80px;
   text-align: center;
   /* position: relative; */
   /* right: 23%; */
   /* margin-top: 60px; */
 }
-.CTASection button {
-  /* justify-content:center; */
-  /* align-items: center; */
-  width: 40%;
-  padding: 1% 0px;
-  color: grey;
+.CTASection .CTA button {
+  box-sizing: border-box;
+  margin: 4% 0;
+  width: 30%;
+  padding: 2% 0px;
+  color: black;
   background-color: white;
-  /* position: absolute; */
-  /* left: 45%; */
 }
 .CTASection button:hover {
   color: white;
@@ -256,9 +235,6 @@ header a:hover {
 /* .ctaImg{
     width:40%;
 } */
-/* This class is given to the top section and the bottom section */
-/* Why isn't this putting space around the top and bottom? */
-/* Would it be better if I gave each section their own div? */
 .wrapper {
   display: flex;
   justify-content: space-around;
@@ -312,31 +288,6 @@ footer {
   margin: 2% 0;
 }
 /*media queries here*/
-/* Tablet */
-@media (max-width: 800px) {
-  body {
-    /* background-color: purple; */
-  }
-  nav {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .links {
-    width: 100%;
-  }
-  .logo {
-    margin: 2% 0;
-  }
-  .CTASection {
-    justify-content: center;
-  }
-  .ctaImg {
-    display: none;
-  }
-  footer {
-    text-align: center;
-  }
-}
 /* Phone */
 @media (max-width: 500px) {
   body {
